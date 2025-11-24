@@ -14,3 +14,36 @@ by Jeffrey Negrea*, Mahdi Haghifam*, Gintare Karolina Dziugaite, Ashish Khisti, 
 by Mahdi Haghifam, Jeffrey Negrea, Ashish Khisti, Daniel M Roy, Gintare Karolina Dziugaite
 
 We only consider the full-batch SGLD, i.e., LD, for simplicity here. 
+
+
+# Generalization Bounds Simulator (MNIST / Fashion-MNIST / CIFAR-10)
+
+This repository contains a compact simulation framework for **tracking and comparing generalization bounds during training** of neural networks on standard vision datasets.
+
+Each dataset has:
+- a **main script** (`main-*.py`) that runs repeated experiments and plots results, and
+- a matching **bounds module** (`*_bounds.py`) that implements the training loop and the bound estimators.
+
+The code is intentionally lightweight and easy to modify for new datasets or architectures.
+
+---
+
+## What this code does
+
+For a given dataset/model pair, the code:
+
+1. **Trains a network with noisy SGD** (noise schedule is built in).
+2. **Measures empirical generalization error** over training iterations.
+3. **Computes three bound estimates** alongside training:
+   - **Incoherence-style bound**
+   - **Gradient-norm bound**
+   - **Conditional Mutual Information (CMI) bound**
+4. Repeats training across multiple random runs.
+5. Plots **mean ± std** of the estimated generalization curves.
+
+The result is a clear, iteration-by-iteration view of **how different theoretical predictors track real generalization in practice**.
+
+---
+
+## Repository structure
+
