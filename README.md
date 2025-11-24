@@ -16,7 +16,6 @@ by Mahdi Haghifam, Jeffrey Negrea, Ashish Khisti, Daniel M Roy, Gintare Karolina
 We only consider the full-batch SGLD, i.e., LD, for simplicity here. 
 
 
-# Generalization Bounds Simulator (MNIST / Fashion-MNIST / CIFAR-10)
 
 This repository contains a compact simulation framework for **tracking and comparing generalization bounds during training** of neural networks on standard vision datasets.
 
@@ -45,5 +44,11 @@ The result is a clear, iteration-by-iteration view of **how different theoretica
 
 ---
 
-## Repository structure
+
+## Installation
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
 
