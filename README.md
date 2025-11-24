@@ -45,6 +45,13 @@ The result is a clear, iteration-by-iteration view of **how different theoretica
 ---
 
 
+## Contact
+
+For questions and feedback:
+- **Mahdi Haghifam** - [haghifam.mahdi@gmail.com](mailto:haghifam.mahdi@gmail.com)
+
+
+
 ## Installation
 
 ```bash
