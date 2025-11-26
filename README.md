@@ -34,9 +34,9 @@ For a given dataset/model pair, the code:
 1. **Trains a network with noisy SGD** (noise schedule is built in).
 2. **Measures empirical generalization error** over training iterations.
 3. **Computes three bound estimates** alongside training:
-   - **Incoherence-style bound**
-   - **Gradient-norm bound**
-   - **Conditional Mutual Information (CMI) bound**
+   - **Incoherence-style bound** from [https://arxiv.org/abs/1911.02151]
+   - **Gradient-norm bound** from [https://arxiv.org/abs/1902.00621]
+   - **Conditional Mutual Information (CMI) bound** from [https://arxiv.org/abs/2004.129]
 4. Repeats training across multiple random runs.
 5. Plots **mean ± std** of the estimated generalization curves.
 
