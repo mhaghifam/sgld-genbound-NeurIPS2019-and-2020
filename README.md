@@ -1,4 +1,4 @@
-# Information-Theoritic Generalization Bounds for SGLD 
+# Non-Vacous Generalization Bounds for Deep Learning: Information-Theoritic Generalization Bounds for SGLD 
 
 This repo contains the code for the numerical results presented in the following papers. 
 
