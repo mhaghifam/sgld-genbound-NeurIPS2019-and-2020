@@ -47,6 +47,7 @@ def main():
     plt.xticks(fontsize=13)
     plt.yticks(fontsize=15)
     plt.ylim([0, 1])
+    plt.savefig('ege-mnist-mlp.pdf')
     plt.show()
 
 if __name__ == '__main__':
