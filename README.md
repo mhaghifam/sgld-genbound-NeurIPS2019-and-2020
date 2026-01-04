@@ -47,17 +47,31 @@ The result is a clear, iteration-by-iteration view of **how different theoretica
 ---
 
 
+## Installation
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Run Individual Experiments
+```bash
+python main_cifar10.py      # CIFAR-10
+python main_mnist_mlp.py    # MNIST with MLP
+python main_mnist_cnn.py    # MNIST with CNN
+python main_fashion_mnist.py # Fashion-MNIST
+```
+
+## Output
+- `ege-cifar10.pdf`
+- `ege-mnist-mlp.pdf`
+- `ege-mnist-cnn.pdf`
+- `ege-fashion-mnist.pdf`
+
 ## Contact
 
 For questions and feedback:
 - **Mahdi Haghifam** - [haghifam.mahdi@gmail.com](mailto:haghifam.mahdi@gmail.com)
 
 
-
-## Installation
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
 
