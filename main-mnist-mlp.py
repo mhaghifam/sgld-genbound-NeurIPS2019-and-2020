@@ -21,7 +21,7 @@ def main():
         _, _, _, sq_gen_grad_sample = GradBoundSimulator().train()
         sq_gen_grad[rep, :] = sq_gen_grad_sample
 
-    gen_incoh =  1/(2*np.sqrt(2))*np.mean(np.sqrt(sq_gen_inoch), axis=0)
+    gen_incoh =  1/(2*np.sqrt(2))*np.sqrt(sq_gen_inoch)
     avg_gen_incoh = np.mean(gen_incoh, axis=0)
     std_gen_incoh = np.std(gen_incoh,axis=0)/np.sqrt(len(gen_incoh))
     gen_grad =np.sqrt(2) / num_traindp * np.sqrt(sq_gen_grad)
